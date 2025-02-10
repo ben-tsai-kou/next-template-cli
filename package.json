@@ -1,11 +1,20 @@
 {
-  "name": "next-project-template",
-  "version": "1.0.0",
-  "description": "next project template",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "create-nextjs-template",
+    "version": "1.0.0",
+    "description": "CLI tool for creating Next.js project with predefined templates",
+    "type": "module",
+    "bin": {
+        "create-nextjs-template": "./src/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.4.1",
+        "commander": "^13.1.0",
+        "inquirer": "^12.4.1",
+        "ora": "^8.2.0"
+    }
 }
