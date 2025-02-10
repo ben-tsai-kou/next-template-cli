@@ -1,5 +1,5 @@
 {
-    "name": "create-nextjs-template",
+    "name": "@test-cli/create-nextjs-template",
     "version": "1.0.0",
     "description": "CLI tool for creating Next.js project with predefined templates",
     "type": "module",
