@@ -1,14 +1,18 @@
 #!/usr/bin/env node
-const inquirer = require('inquirer');
+import inquirer from 'inquirer';
+import { createProject } from './utils/project.js';
+import { projectQuestions } from './questions/questions.js';
 
-inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'name',
-            message: 'What is your name?',
-        },
-    ])
-    .then((answers) => {
-        console.log(`Hi ${answers.name}!`);
-    });
+console.log('Next.js Project Generator Starting...');
+
+async function main() {
+    try {
+        const answers = await inquirer.prompt(projectQuestions);
+        await createProject(answers);
+    } catch (error) {
+        console.error('Error:', error.message);
+        process.exit(1);
+    }
+}
+
+main();

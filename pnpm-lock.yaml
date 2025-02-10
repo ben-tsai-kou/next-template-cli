@@ -20,6 +20,9 @@ importers:
       ora:
         specifier: ^8.2.0
         version: 8.2.0
+      src:
+        specifier: link:/Users/bentsai/next-project-template/src
+        version: link:src
 
 packages:
 
